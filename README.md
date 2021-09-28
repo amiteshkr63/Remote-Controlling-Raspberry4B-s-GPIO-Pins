@@ -49,6 +49,9 @@ this contains some default website files here
 
 Generally ```/var/www/html```
 
+![1](https://user-images.githubusercontent.com/88953654/135122575-5de4c203-5f28-4aab-804f-a1954c46aa59.png)
+
+
 Goto this directory
 
 ```cd /var/www/html```
@@ -82,7 +85,6 @@ then, cut-copy paste your desired html file to index.html
 ```vi index.html```
 
 
-![1](https://user-images.githubusercontent.com/88953654/135122575-5de4c203-5f28-4aab-804f-a1954c46aa59.png)
 
  
 
