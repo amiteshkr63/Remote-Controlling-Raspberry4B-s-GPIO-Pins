@@ -1,5 +1,13 @@
 # Remote-Controlling-Raspberry4B-s-GPIO-Pins
 
+## Part-A via Configuring PHP to Apache2
+
+Part-1 Creating webpage interface to control GPIO pins via Apache2
+
+Part-2 Enabling Google Home Voice to control GPIO pins
+
+## Part-B via Configuring Django WebServer to Apache2
+
 Part-1 Creating webpage interface to control GPIO pins via Apache2
 
 Part-2 Enabling Google Home Voice to control GPIO pins
