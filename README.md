@@ -6,17 +6,33 @@ Part-1 Creating webpage interface to control GPIO pins via Apache2
 
 Part-2 Enabling Google Home Voice to control GPIO pins
 
+#### Steps for enabling google home assistant to raspberrypi 4b
 Reference:
 https://developers.google.com/assistant/sdk/guides/service/python
 
+#### Configuring recorder and speaker for raspberry pi 4b
+
+Reference:
+https://www.youtube.com/watch?v=mu-Ghn-aeO8&t=93s
+
 Steps
 1. Setting Up
-1-1. Connect the speakers into 3.5 mm audio jack.
-1-2. Connect the USB mic into USB ports.
-1-3. Boot up Raspberry Pi Board. If it’s not set up yet, please refer this post.
-1-4. Make sure the speaker is working. The command below can be used for speaker output test. To end the test, press Ctrl-C.
 
-'speaker-test -t wav'
+2. Connect the speakers into 3.5 mm audio jack.
+
+3. Connect the USB mic into USB ports.
+
+4. Boot up Raspberry Pi Board. If it’s not set up yet, please refer this post.
+
+5. Make sure the speaker is working. The command below can be used for speaker output test. To end the test, press Ctrl-C.
+
+`speaker-test -t wav`
+
+if speaker is not working then edit `.asoundrc` file loction: `home/pi/`
+
+`sudo nano .asoundrc`
+
+
 
 #### Basic hardware requirements
 
