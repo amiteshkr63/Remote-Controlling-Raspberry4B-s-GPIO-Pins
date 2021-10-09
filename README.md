@@ -6,6 +6,9 @@ Part-1 Creating webpage interface to control GPIO pins via Apache2
 
 Part-2 Enabling Google Home Voice to control GPIO pins
 
+Reference:
+https://developers.google.com/assistant/sdk/guides/service/python
+
 ## Part-B via Configuring Django WebServer to Apache2
 
 Part-1 Creating webpage interface to control GPIO pins via Apache2
