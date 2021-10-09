@@ -9,6 +9,24 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 Reference:
 https://developers.google.com/assistant/sdk/guides/service/python
 
+#### Basic hardware requirements
+
+Before you begin, you'll need the following components:
+-A device running on one of the supported platforms, with internet connectivity
+-A microphone
+-A speaker
+
+#### How to Record and Playback Audio on Raspberry PI
+
+Install PulseAudio +Bluetooth module
+
+`sudo apt-get install pulseaudio`
+`sudo apt-get install pavucontrol paprefs`
+`sudo apt-get install pulseaudio-module-bluetooth`
+
+Use GUI via VNC or Remote host connection Goto `Bluetooth tab` then `Add Device`
+then connect to desired bluetooth speaker
+
 ## Part-B via Configuring Django WebServer to Apache2
 
 Part-1 Creating webpage interface to control GPIO pins via Apache2
