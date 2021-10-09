@@ -21,7 +21,9 @@ Before you begin, you'll need the following components:
 Install PulseAudio +Bluetooth module
 
 `sudo apt-get install pulseaudio`
+
 `sudo apt-get install pavucontrol paprefs`
+
 `sudo apt-get install pulseaudio-module-bluetooth`
 
 Use GUI via VNC or Remote host connection Goto `Bluetooth tab` then `Add Device`
