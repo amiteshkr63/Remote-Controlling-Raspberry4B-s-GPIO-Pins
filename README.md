@@ -9,6 +9,15 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 Reference:
 https://developers.google.com/assistant/sdk/guides/service/python
 
+Steps
+1. Setting Up
+1-1. Connect the speakers into 3.5 mm audio jack.
+1-2. Connect the USB mic into USB ports.
+1-3. Boot up Raspberry Pi Board. If it’s not set up yet, please refer this post.
+1-4. Make sure the speaker is working. The command below can be used for speaker output test. To end the test, press Ctrl-C.
+
+'speaker-test -t wav'
+
 #### Basic hardware requirements
 
 Before you begin, you'll need the following components:
@@ -18,16 +27,6 @@ Before you begin, you'll need the following components:
 
 #### How to Record and Playback Audio on Raspberry PI
 
-Install PulseAudio +Bluetooth module
-
-`sudo apt-get install pulseaudio`
-
-`sudo apt-get install pavucontrol paprefs`
-
-`sudo apt-get install pulseaudio-module-bluetooth`
-
-Use GUI via VNC or Remote host connection Goto `Bluetooth tab` then `Add Device`
-then connect to desired bluetooth speaker
 
 ## Part-B via Configuring Django WebServer to Apache2
 
