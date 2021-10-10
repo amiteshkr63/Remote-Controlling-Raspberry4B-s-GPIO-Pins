@@ -20,7 +20,8 @@ Check the current volume.
 
 `amixer`
 
-From here use following commands to 
+From here use following commands to configure your BLUETOOTH HEADSET TO Raspberry pi 4B:
+
 `sudo apt update`
 
 `sudo apt full-upgrade`
@@ -42,9 +43,9 @@ From here use following commands to
 if it works for you then, use it Otherwise left it:
 `dpkg -l pulseaudio pulseaudio-module-bluetooth`
 
-if bluetooth headset configuration not done after following commands:
+if bluetooth headset configuration not done after following below all commands:
 you have to purge all audio subsystem regarding bluealsa, at last resort. Then, try from start:
-`sudo apt purge bluealsa`
+`sudo apt purge bluealsa` try after only if you are not able to configure your bluetooth device for recording and speaker purpose
 
 Bluetooth Connection
 Now we will connect to the Bluetooth headset (or speaker)
