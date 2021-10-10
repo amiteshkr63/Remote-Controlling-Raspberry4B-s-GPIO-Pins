@@ -10,6 +10,16 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 
 http://youness.net/raspberry-pi/how-to-connect-bluetooth-headset-or-speaker-to-raspberry-pi-3
 
+> 
+Testing:
+Make sure the speaker is working. The command below can be used for speaker output test. To end the test, Ctrl+Z
+
+`speaker-test -t wav`
+
+Check the current volume.
+
+`amixer`
+
 #### Steps for enabling google home assistant to raspberrypi 4b
 Reference:
 https://developers.google.com/assistant/sdk/guides/service/python
