@@ -8,6 +8,8 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 
 ### Connecting Bluetooth Headset to Raspberry pi(Tested and Verified)
 
+Main point is that you have to use `Pulseaudio` audio subsystem to configure bluetooth device. Don't use `Bluealsa` which is by default in case of raspberry pi. its harder and buggy to configure
+
 http://youness.net/raspberry-pi/how-to-connect-bluetooth-headset-or-speaker-to-raspberry-pi-3
 
 > 
