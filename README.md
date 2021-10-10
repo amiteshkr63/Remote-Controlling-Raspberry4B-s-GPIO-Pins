@@ -153,7 +153,7 @@ IT WORKS!
 Reference:
 https://developers.google.com/assistant/sdk/guides/service/python
 
-#### Configuring recorder and speaker for raspberry pi 4b
+#### Configuring recorder and speaker for raspberry pi 4b via external audio card recorder 3.5mm 
 
 Reference:
 https://www.youtube.com/watch?v=mu-Ghn-aeO8&t=93s
