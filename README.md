@@ -157,11 +157,11 @@ While scanning, we will kill Bluealsa, and start PulseAudio:
 
 Go back to Bluetoothctl: Pair, trust and connect your device:
 
-`pair xx:xx:xx:xx:xx:xx`
+`pair EB:06:EF:6A:D4:17`
 
-`trust xx:xx:xx:xx:xx:xx`
+`trust EB:06:EF:6A:D4:17`
 
-`connect xx:xx:xx:xx:xx:xx`
+`connect EB:06:EF:6A:D4:17`
 
 At this step, you should have you device successfully connected to Raspberry Pi.
 
@@ -175,11 +175,11 @@ The Bluetooth card will be index #1, you can also see the supported profiles (a2
 Bluetooth Headset will be in index #2, you can also see the supported profiles (a2dp, hsp, off…)
 Set A2DP as active profile:
 
-`pacmd set-card-profile bluez_card.xx_xx_xx_xx_xx_xx a2dp_sink`
+`pacmd set-card-profile bluez_card.EB_06_EF_6A_D4_17 a2dp_sink`
 
 Set the Bluetooth device as output audio:
 
-`pacmd set-default-sink bluez_sink.xx_xx_xx_xx_xx_xx.a2dp_sink`
+`pacmd set-default-sink bluez_sink.EB_06_EF_6A_D4_17.a2dp_sink`
 
 Download this file and play it:
 
@@ -197,7 +197,7 @@ This is a vendor-specific hexadecimal command, that changes the Broadcom (or Cyp
 
 At this step, I couldn’t switch to headset_head_unit:
 
-`pacmd set-card-profile bluez_card.xx_xx_xx_xx_xx_xx headset_head_unit`
+`pacmd set-card-profile bluez_card.EB_06_EF_6A_D4_17 headset_head_unit`
 
 I got the error:
 Failed to set card profile to ‘headset_head_unit’.
@@ -207,13 +207,13 @@ I can’t tell your what was the problem, but I’m used to this kind of instabi
 
 This time the switch to HSP profile was OK:
 
-`pacmd set-card-profile bluez_card.xx_xx_xx_xx_xx_xx headset_head_unit`
+`pacmd set-card-profile bluez_card.EB_06_EF_6A_D4_17 headset_head_unit`
 
 Set the sink and source:
 
-`pacmd set-default-sink bluez_sink.xx_xx_xx_xx_xx_xx.headset_head_unit`
+`pacmd set-default-sink bluez_sink.EB_06_EF_6A_D4_17.headset_head_unit`
 
-`pacmd set-default-source bluez_source.xx_xx_xx_xx_xx_xx.headset_head_unit`
+`pacmd set-default-source bluez_source.EB_06_EF_6A_D4_17.headset_head_unit`
 
 If you play an audio sound, you will notice the mono quality of headset audio.
 
