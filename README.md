@@ -38,7 +38,6 @@ Install Bluealsa and Pulseaudio Module(Audio subsystem for pi):
 
 `
 sudo apt-get install bluealsa pulseaudio
-
 `
 
 SAP Driver Initialization Failure:
