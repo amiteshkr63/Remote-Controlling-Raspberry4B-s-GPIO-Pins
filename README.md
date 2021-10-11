@@ -7,6 +7,10 @@ Part-1 Creating webpage interface to control GPIO pins via Apache2
 Part-2 Enabling Google Home Voice to control GPIO pins
 
 ### Connecting Bluetooth Headset to Raspberry pi(Tested and Verified)
+
+![A2DPHSP-768x569](https://user-images.githubusercontent.com/88953654/136789043-27c8233c-a2e2-475f-a101-271dde5dddcc.jpg)
+
+
 1)
 
 https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
