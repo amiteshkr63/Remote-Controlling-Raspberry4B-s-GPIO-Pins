@@ -7,9 +7,9 @@ Part-1 Creating webpage interface to control GPIO pins via Apache2
 Part-2 Enabling Google Home Voice to control GPIO pins
 
 ### Connecting Bluetooth Headset to Raspberry pi(Tested and Verified)
-
-Main point is that you have to use `Pulseaudio` audio subsystem to configure bluetooth device. Don't use `Bluealsa` which is by default in case of raspberry pi. its harder and buggy to configure
-
+1)
+https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
+2)
 http://youness.net/raspberry-pi/how-to-connect-bluetooth-headset-or-speaker-to-raspberry-pi-3
 
 > 
@@ -22,38 +22,114 @@ Check the current volume.
 
 `amixer`
 
-From here use following commands to configure your BLUETOOTH HEADSET TO Raspberry pi 4B:
+`sudo apt-get update`
 
-`sudo apt update`
+`sudo apt-get upgrade`
 
-`sudo apt full-upgrade`
+Adding Pi To Bluetooth Users
 
-`sudo apt-get install pi-bluetooth`
+`sudo usermod -G bluetooth -a pi`
 
-`sudo apt-get install bluetooth bluez blueman`
+Now reboot:
 
-`sudo apt-get install bluez`
+`sudo reboot now`
 
-` apt-get install pulseaudio-*.`
+Install Bluealsa and Pulseaudio Module(Audio subsystem for pi):
 
-`sudo apt-get autoremove`
+`
+sudo apt-get install bluealsa pulseaudio
 
-`sudo reboot`
+`
 
-`sudo apt-get install pulseaudio pulseaudio-module-bluetooth`
+SAP Driver Initialization Failure:
+
+check bluetooth service starting status:
+`
+sudo systemctl status bluetooth.service
+
+`
+![Screenshot (1796)](https://user-images.githubusercontent.com/88953654/136737149-8ff1c8db-9fb7-4d11-baec-629031f57a2c.png)
+
+The “Sap driver initialization failed.” notices that someting is going wrong on startup. This can be fixed simply stopping the SIM profile loading. With your favourite text editor (mine one is nano), modify “/lib/systemd/system/bluetooth.service” file to add “–noplugin=sap” option near “ExecStart=/usr/lib/bluetooth/bluetoothd” configuration:
+
+`
+sudo nano /lib/systemd/system/bluetooth.service
+
+`
+
+![Screenshot (1797)](https://user-images.githubusercontent.com/88953654/136737325-9975dcae-1708-4e16-8765-8a76f46aac9a.png)
+
+Now Reboot:
+`
+sudo reboot now
+
+`
+Privacy Setting Rejected Failure:
+
+once again check blutooth service
+`
+sudo systemctl status bluetooth.service
+
+`
+![Screenshot (1798)](https://user-images.githubusercontent.com/88953654/136737588-4cb12e91-f56b-4a9a-a854-faa112d4883d.png)
+`
+sudo nano /lib/systemd/system/bthelper@.service
+
+`
+
+and make it the same as the following:
+
+```
+
+[Unit]
+Description=Raspberry Pi bluetooth helper
+Requires=bluetooth.service
+After=bluetooth.service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 2
+ExecStart=/usr/bin/bthelper %I
+
+
+```
+![Screenshot (1799)](https://user-images.githubusercontent.com/88953654/136737748-349c0248-5e5f-42f6-91a8-1008fa973dd8.png)
+
+Reboot again and now everything should be ok with sudo systemctl status bluetooth.service.
+
+Check That Pulseaudio Is Running:
+
+`
+ps aux | grep pulseaudio
+
+`
+If this command returns the following output:
+
+> pi@raspberrypi:~ $ ps aux | grep pulseaudio
+> pi 538 0.0 0.0 7348 504 pts/0 S+ 22:01 0:00 grep --color=auto pulseaudio
+> 
+
+then you must manually launch pulseaudio:
+```
+
+pulseaudio --start
+
+```
+so that you should see the correct status from ps aux | grep pulseaudio command:
+
+> 
+> pi@raspberrypi:~ $ ps aux | grep pulseaudio
+> pi 544 4.3 1.8 181592 17720 ? Sl 22:02 0:00 pulseaudio --start
+> pi 564 0.0 0.0 7348 488 pts/0 S+ 22:02 0:00 grep --color=auto pulseaudio
+
+![Screenshot (1801)](https://user-images.githubusercontent.com/88953654/136737856-2f402aa2-1a8d-411e-a60f-3ca7f3bfad46.png)
+
+##### Now, Pair Bluetooth Device
+
 
 if it works for you then, use it Otherwise left it:
 
 `dpkg -l pulseaudio pulseaudio-module-bluetooth`
-
-if bluetooth headset configuration not done after following below all commands:
-you have to purge all audio subsystem regarding bluealsa, at last resort. Then, try from start:
-
-`sudo apt purge bluealsa` try after only if you are not able to configure your bluetooth device for recording and speaker purpose
-
-Bluetooth Connection
-Now we will connect to the Bluetooth headset (or speaker)
-The same steps like in my previous tutorials using bluetoothctl.
 
 Start Bluetoothctl tool and initiate it:
 
