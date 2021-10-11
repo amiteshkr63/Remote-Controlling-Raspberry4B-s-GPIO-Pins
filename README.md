@@ -165,6 +165,22 @@ Go back to Bluetoothctl: Pair, trust and connect your device:
 
 At this step, you should have you device successfully connected to Raspberry Pi.
 
+> if you are able to connect bluetooth device, then skip to <A2DP Support> section
+
+If anyhow you are not able to connect bluetooth device to pi then use these commands:
+
+sudo apt install pulseaudio-module-bluetooth 
+
+pulseaudio -k
+
+pulseaudio --start
+
+Then, again start from `bluetoothctl`, power on, agent on .........pair xx:xx:xx:xx:xx:xx,trust xx:xx:xx:xx:xx:xx, connect xx:xx:xx:xx:xx:xx
+
+If anyhow doesn't workout then only use this cmmnd:
+
+`sudo pactl load-module module-bluetooth-discover`
+
 ##### A2DP Support
 Now let’s check that A2DP streaming is working.
 We start by checking that PulseAudio is listing the Bluetooth sound card:
