@@ -249,6 +249,14 @@ Play it back via Bluetooth device:
 `paplay -v /tmp/voice.wav`
 
 IT WORKS!
+ 
+ > If you don't want to do this bluetooth configuration everytime you just have to paste a cmmnd in your /etc/rc.local file:
+
+`sudo vi /etc/rc.local `
+
+![Screenshot (1803)](https://user-images.githubusercontent.com/88953654/136788218-0b814cb3-6249-4483-a9b9-335e15b61b79.png)
+
+
 #### Steps for enabling google home assistant to raspberrypi 4b
 Reference:
 https://developers.google.com/assistant/sdk/guides/service/python
