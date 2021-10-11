@@ -8,8 +8,11 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 
 ### Connecting Bluetooth Headset to Raspberry pi(Tested and Verified)
 1)
+
 https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
+
 2)
+
 http://youness.net/raspberry-pi/how-to-connect-bluetooth-headset-or-speaker-to-raspberry-pi-3
 
 > 
