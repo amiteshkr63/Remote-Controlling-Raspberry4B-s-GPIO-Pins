@@ -260,15 +260,33 @@ IT WORKS!
 
 ![Screenshot (1803)](https://user-images.githubusercontent.com/88953654/136788218-0b814cb3-6249-4483-a9b9-335e15b61b79.png)
 
-
-#### Steps for enabling google home assistant to raspberrypi 4b
-Reference:
-https://developers.google.com/assistant/sdk/guides/service/python
-
 #### Configuring recorder and speaker for raspberry pi 4b via external audio card recorder 3.5mm 
 
 Reference:
 https://www.youtube.com/watch?v=mu-Ghn-aeO8&t=93s
+ 
+#### Steps for enabling google home assistant to raspberrypi 4b
+Reference:
+https://developers.google.com/assistant/sdk/guides/service/python/embed/audio?hardware=rpi
+
+ 
+ Goto `.asoundrc` to edit in this way for bluetooth headset:
+
+`sudo nano .asoundrc`
+
+Paste below cmmnds in `.asoundrc` with your Bluetooth mac address:
+
+```
+defaults.bluealsa.interface "hci0"
+defaults.bluealsa.device "EB:06:EF:6A:D4:17"
+defaults.bluealsa.profile "sco"
+defaults.bluealsa.delay 10000
+```
+ 
+![Screenshot (1805)](https://user-images.githubusercontent.com/88953654/136802094-5b7ca687-8161-41b9-b975-223aaf2bf3ea.png)
+
+
+
 
 
 ## Part-B via Configuring Django WebServer to Apache2
