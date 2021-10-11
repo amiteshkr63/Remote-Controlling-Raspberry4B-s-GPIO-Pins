@@ -43,37 +43,39 @@ sudo apt-get install bluealsa pulseaudio
 SAP Driver Initialization Failure:
 
 check bluetooth service starting status:
-`
-sudo systemctl status bluetooth.service
 
 `
+sudo systemctl status bluetooth.service
+`
+
 ![Screenshot (1796)](https://user-images.githubusercontent.com/88953654/136737149-8ff1c8db-9fb7-4d11-baec-629031f57a2c.png)
 
 The “Sap driver initialization failed.” notices that someting is going wrong on startup. This can be fixed simply stopping the SIM profile loading. With your favourite text editor (mine one is nano), modify “/lib/systemd/system/bluetooth.service” file to add “–noplugin=sap” option near “ExecStart=/usr/lib/bluetooth/bluetoothd” configuration:
 
 `
 sudo nano /lib/systemd/system/bluetooth.service
-
 `
 
 ![Screenshot (1797)](https://user-images.githubusercontent.com/88953654/136737325-9975dcae-1708-4e16-8765-8a76f46aac9a.png)
 
 Now Reboot:
-`
-sudo reboot now
 
 `
+sudo reboot now
+`
+
 Privacy Setting Rejected Failure:
 
 once again check blutooth service
+
 `
 sudo systemctl status bluetooth.service
-
 `
+
 ![Screenshot (1798)](https://user-images.githubusercontent.com/88953654/136737588-4cb12e91-f56b-4a9a-a854-faa112d4883d.png)
+
 `
 sudo nano /lib/systemd/system/bthelper@.service
-
 `
 
 and make it the same as the following:
@@ -92,6 +94,7 @@ ExecStart=/usr/bin/bthelper %I
 
 
 ```
+
 ![Screenshot (1799)](https://user-images.githubusercontent.com/88953654/136737748-349c0248-5e5f-42f6-91a8-1008fa973dd8.png)
 
 Reboot again and now everything should be ok with sudo systemctl status bluetooth.service.
@@ -100,8 +103,8 @@ Check That Pulseaudio Is Running:
 
 `
 ps aux | grep pulseaudio
-
 `
+
 If this command returns the following output:
 
 > pi@raspberrypi:~ $ ps aux | grep pulseaudio
@@ -109,10 +112,9 @@ If this command returns the following output:
 > 
 
 then you must manually launch pulseaudio:
+
 ```
-
 pulseaudio --start
-
 ```
 so that you should see the correct status from ps aux | grep pulseaudio command:
 
