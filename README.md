@@ -43,10 +43,12 @@ From here use following commands to configure your BLUETOOTH HEADSET TO Raspberr
 `sudo apt-get install pulseaudio pulseaudio-module-bluetooth`
 
 if it works for you then, use it Otherwise left it:
+
 `dpkg -l pulseaudio pulseaudio-module-bluetooth`
 
 if bluetooth headset configuration not done after following below all commands:
 you have to purge all audio subsystem regarding bluealsa, at last resort. Then, try from start:
+
 `sudo apt purge bluealsa` try after only if you are not able to configure your bluetooth device for recording and speaker purpose
 
 Bluetooth Connection
