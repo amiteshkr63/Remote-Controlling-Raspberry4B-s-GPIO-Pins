@@ -10,19 +10,8 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 
 ![A2DPHSP-768x569](https://user-images.githubusercontent.com/88953654/136789043-27c8233c-a2e2-475f-a101-271dde5dddcc.jpg)
 
-Compatability For Diff, Bluetooth Headsets for Raspberry pi:
+Compatability For Diff, Bluetooth Headsets for Raspberry pi: https://wiki.gentoo.org/wiki/Bluetooth_headset
 
-https://wiki.gentoo.org/wiki/Bluetooth_headset
-
-1)
-
-https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
-
-2)
-
-http://youness.net/raspberry-pi/how-to-connect-bluetooth-headset-or-speaker-to-raspberry-pi-3
-
-> 
 Testing:
 Make sure the speaker is working. The command below can be used for speaker output test. To end the test, Ctrl+Z
 
@@ -306,9 +295,11 @@ defaults.bluealsa.delay 10000
  https://github-wiki-see.page/m/Arkq/bluez-alsa/wiki/Using-the-bluealsa-ALSA-pcm-plugin
  https://github.com/Arkq/bluez-alsa/wiki/Using-the-bluealsa-ALSA-pcm-plugin
 
+References:
 
+https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
 
-
+http://youness.net/raspberry-pi/how-to-connect-bluetooth-headset-or-speaker-to-raspberry-pi-3
 
 ## Part-B via Configuring Django WebServer to Apache2
 
