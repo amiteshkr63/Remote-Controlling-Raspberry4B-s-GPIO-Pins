@@ -325,6 +325,11 @@ defaults.bluealsa.delay 10000
  Install the SDK and Sample Code:
  https://developers.google.com/assistant/sdk/guides/service/python/embed/install-sample
  
+ If Error-400 Authorization error caused, Then:
+ 
+ ![Screenshot (1861)](https://user-images.githubusercontent.com/88953654/137188777-d6507356-ae3d-4df3-b498-725c832396f0.png)
+ 
+ 
 References:
 
 https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
