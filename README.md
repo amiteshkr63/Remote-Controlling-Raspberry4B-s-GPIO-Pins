@@ -10,6 +10,9 @@ Part-2 Enabling Google Home Voice to control GPIO pins
 
 ![A2DPHSP-768x569](https://user-images.githubusercontent.com/88953654/136789043-27c8233c-a2e2-475f-a101-271dde5dddcc.jpg)
 
+Compatability For Diff, Bluetooth Headsets for Raspberry pi:
+
+https://wiki.gentoo.org/wiki/Bluetooth_headset
 
 1)
 
@@ -298,6 +301,10 @@ defaults.bluealsa.delay 10000
 ```
  
 ![Screenshot (1805)](https://user-images.githubusercontent.com/88953654/136802094-5b7ca687-8161-41b9-b975-223aaf2bf3ea.png)
+ 
+ .asoundrc format:
+ https://github-wiki-see.page/m/Arkq/bluez-alsa/wiki/Using-the-bluealsa-ALSA-pcm-plugin
+ https://github.com/Arkq/bluez-alsa/wiki/Using-the-bluealsa-ALSA-pcm-plugin
 
 
 
