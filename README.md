@@ -157,6 +157,7 @@ Start the scan:
 
 After some seconds, you will see the headset name and `MAC address (xx:xx:xx:xx:xx:xx)`
 While scanning, we will kill Bluealsa, and start PulseAudio:
+We are doing it because we can't run pulseaudio and bluealsa simultaneously:
 
 `sudo killall bluealsa`
 
