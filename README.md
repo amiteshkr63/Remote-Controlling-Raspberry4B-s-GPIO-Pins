@@ -329,6 +329,10 @@ defaults.bluealsa.delay 10000
  
  ![Screenshot (1861)](https://user-images.githubusercontent.com/88953654/137188777-d6507356-ae3d-4df3-b498-725c832396f0.png)
  
+ Final test of Google Home implemented or not on Raspberry pi:
+ 
+ ![Screenshot (1857)](https://user-images.githubusercontent.com/88953654/137190452-647908b8-9e2b-4b29-961d-b8d4a3cf4d02.png)
+ 
  
 References:
 
