@@ -157,6 +157,8 @@ We are doing it because we can't run pulseaudio and bluealsa simultaneously:
 
 Go back to Bluetoothctl: Pair, trust and connect your device:
 
+`bluetoothctl`
+
 `pair EB:06:EF:6A:D4:17`
 
 `trust EB:06:EF:6A:D4:17`
