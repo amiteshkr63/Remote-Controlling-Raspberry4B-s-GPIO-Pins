@@ -296,6 +296,20 @@ defaults.bluealsa.delay 10000
  .asoundrc format:
  https://github-wiki-see.page/m/Arkq/bluez-alsa/wiki/Using-the-bluealsa-ALSA-pcm-plugin
  https://github.com/Arkq/bluez-alsa/wiki/Using-the-bluealsa-ALSA-pcm-plugin
+ 
+ Check if your format for .asoundrc is correct:
+ https://developers.google.com/assistant/sdk/guides/service/python/embed/audio
+ 
+ Configure a Developer Project and Account Settings:
+ https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account
+ 
+![1](https://user-images.githubusercontent.com/88953654/137185002-e852f24d-f040-4b55-914d-0c7c441edc38.png)
+![2](https://user-images.githubusercontent.com/88953654/137185011-6fa29484-d790-4c14-bd58-92894d000ae7.png)
+![3](https://user-images.githubusercontent.com/88953654/137185069-735d15c1-d656-4f0e-a28e-319741493bbd.png)
+![4](https://user-images.githubusercontent.com/88953654/137185075-a23af57d-8451-46f9-8b58-a41d6f08fb13.png)
+![5](https://user-images.githubusercontent.com/88953654/137185086-649f2288-2e94-411e-a1b7-8538bb9d2fa2.png)
+![6](https://user-images.githubusercontent.com/88953654/137185096-0f1b4c63-ff0f-4e74-afe9-b2b2f7f66171.png)
+![7](https://user-images.githubusercontent.com/88953654/137185115-c3adbb79-0c8f-4b64-8e79-6b73cf85cb76.png)
 
 References:
 
