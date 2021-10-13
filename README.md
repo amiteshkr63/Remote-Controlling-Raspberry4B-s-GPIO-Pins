@@ -176,11 +176,24 @@ At this step, you should have you device successfully connected to Raspberry Pi.
 
 > If anyhow you are not able to connect bluetooth device to pi then use these commands:
 
-> sudo apt install pulseaudio-module-bluetooth 
+ ```
+`sudo apt install pulseaudio-module-bluetooth` 
 
-> pulseaudio -k
+`pulseaudio -k`
 
-> pulseaudio --start
+`pulseaudio --start`
+ 
+ `bluetoothctl`
+
+`power on`
+
+`agent on`
+
+`default-agent`
+ 
+ `connect EB:06:EF:6A:D4:17`
+
+ ```
 
 > Then, again start from `bluetoothctl`, power on, agent on .........pair xx:xx:xx:xx:xx:xx,trust xx:xx:xx:xx:xx:xx, connect xx:xx:xx:xx:xx:xx
 
