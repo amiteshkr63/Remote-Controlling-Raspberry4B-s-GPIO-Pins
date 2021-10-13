@@ -311,6 +311,20 @@ defaults.bluealsa.delay 10000
 ![6](https://user-images.githubusercontent.com/88953654/137185096-0f1b4c63-ff0f-4e74-afe9-b2b2f7f66171.png)
 ![7](https://user-images.githubusercontent.com/88953654/137185115-c3adbb79-0c8f-4b64-8e79-6b73cf85cb76.png)
 
+ Next follow these steps:
+ Register the Device Model:
+ https://developers.google.com/assistant/sdk/guides/service/python/embed/register-device
+ 
+ After registring Model Download OAuth 2.0 Credentials:
+ ![8](https://user-images.githubusercontent.com/88953654/137186359-146c8508-eaf6-41f5-afeb-dc761bf1936d.png)
+
+ Use this Cmd, to transfer json file from your sytem to Raspberry pi:
+ 
+ `scp ~/Downloads/client_secret_`client-id`.json pi@`raspberry-pi-ip-address`:/home/pi/`
+ 
+ Install the SDK and Sample Code:
+ https://developers.google.com/assistant/sdk/guides/service/python/embed/install-sample
+ 
 References:
 
 https://peppe8o.com/fixed-connect-bluetooth-headphones-with-your-raspberry-pi/
