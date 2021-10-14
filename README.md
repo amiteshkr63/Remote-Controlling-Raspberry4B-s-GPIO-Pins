@@ -336,6 +336,34 @@ defaults.bluealsa.device "EB:06:EF:6A:D4:17"
 defaults.bluealsa.profile "sco"
 defaults.bluealsa.delay 10000
 ```
+
+-------------------------------------------------------------------------------------OR------------------------------------------------------------------------------------------
+
+```
+pcm.!default {
+type asym
+capture.pcm "mic"
+playback.pcm "speaker"
+}
+pcm.mic {
+  type plug 
+slave.pcm {
+type bluealsa device "EB:06:EF:6A:D4:17"
+profile "a2dp"
+}
+}
+pcm.speaker {
+type plug
+slave.pcm {
+type bluealsa device "EB:06:EF:6A:D4:17"
+profile "a2dp"
+}
+}
+
+ctl.!default {
+type bluealsa
+}
+```
  
 ![Screenshot (1805)](https://user-images.githubusercontent.com/88953654/136802094-5b7ca687-8161-41b9-b975-223aaf2bf3ea.png)
  
