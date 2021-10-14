@@ -168,7 +168,7 @@ Go back to Bluetoothctl: Pair, trust and connect your device:
 
 At this step, you should have you device successfully connected to Raspberry Pi.
 
-> if you are able to connect bluetooth device, then skip to <A2DP Support> section
+> if you are able to connect bluetooth device, then skip to 'A2DP Support' section
 
  
 > If you are able to pair and trust the bluetooth device but not able to connect to it:
