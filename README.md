@@ -165,20 +165,67 @@ Go back to Bluetoothctl: Pair, trust and connect your device:
 
 `connect EB:06:EF:6A:D4:17`
 
+
 At this step, you should have you device successfully connected to Raspberry Pi.
 
 > if you are able to connect bluetooth device, then skip to <A2DP Support> section
 
-> If anyhow you are not able to connect bluetooth device to pi then use these commands:
+ 
+> If you are able to pair and trust the bluetooth device but not able to connect to it:
+ Then,
 
- ```
+`bluetoothctl`
+
+`remove EB:06:EF:6A:D4:17`
+
+Press `Ctrl+Z` get out of it.
+
+```
+
+bluetoothctl
+
+power on
+
+agent on
+
+default-agent
+
+scan on
+
+```
+wait for it to detect your bluetooth device, Then `Ctrl+Z` to get out of it. if it is not detecting your bluetooth device.Then, Switch off your bluetooth device and
+ try to repeat the same above procedure but just before entering cmmnd 'scan on' switch ON your Bluetooth device
+
+```
+
+sudo killall bluealsa
+
+pulseaudio --start
+
+bluetoothctl
+
+power on
+
+agent on
+
+default-agent
+
+pair EB:06:EF:6A:D4:17
+
+trust EB:06:EF:6A:D4:17
+
+```
+
+Press `Ctrl+Z` to get out of it.
+
+```
 sudo apt install pulseaudio-module-bluetooth 
 
 pulseaudio -k
 
 pulseaudio --start
  
- bluetoothctl
+bluetoothctl
 
 power on
 
@@ -188,9 +235,8 @@ default-agent
  
 connect EB:06:EF:6A:D4:17
 
- ```
+```
 
-> Then, again start from `bluetoothctl`, power on, agent on .........pair xx:xx:xx:xx:xx:xx,trust xx:xx:xx:xx:xx:xx, connect xx:xx:xx:xx:xx:xx
 
 > If anyhow doesn't workout then only use this cmmnd:
 
