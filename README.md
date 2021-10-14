@@ -194,7 +194,7 @@ scan on
 
 ```
 wait for it to detect your bluetooth device, Then `Ctrl+Z` to get out of it. if it is not detecting your bluetooth device.Then, Switch off your bluetooth device and
- try to repeat the same above procedure but just before entering cmmnd 'scan on' switch ON your Bluetooth device
+ try to repeat the same above procedure but just before entering cmmnd 'scan on' switch ON your Bluetooth device. After this it should detect your bluetooth device. Even now if it doesn't detect it.Then, your 'Raspberry pi bluetooth is NOT DISCOVERABLE make it DISCOVERABLE'.
 
 ```
 
