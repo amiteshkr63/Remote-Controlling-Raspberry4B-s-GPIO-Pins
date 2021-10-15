@@ -4,9 +4,11 @@
 
 Part-1 Creating webpage interface to control GPIO pins via Apache2
 
-Part-2 Enabling Google Home Voice to control GPIO pins
+Part-2 Enabling Google Home Voice to control GPIO pins using Bluetooth Headset
 
 ### Connecting Bluetooth Headset to Raspberry pi(Tested and Verified)
+
+Demonstration Video: https://drive.google.com/file/d/1dn_fwHKDbtVWa4r5jnmrnZIOquhN2Hd0/view?usp=sharing
 
 ![A2DPHSP-768x569](https://user-images.githubusercontent.com/88953654/136789043-27c8233c-a2e2-475f-a101-271dde5dddcc.jpg)
 
