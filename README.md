@@ -294,7 +294,7 @@ Set the sink and source:
 
 If you play an audio sound, you will notice the mono quality of headset audio.
 
-`/tmp/h2g2.ogg`
+`papay /tmp/h2g2.ogg`
 
 if doesn't work don't worry move ahead
 
