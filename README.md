@@ -8,6 +8,8 @@ php and python files in Repository
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/88953654/137594159-a2ad5b67-3741-483d-b879-6f26138ef2f6.gif)
 
+![Screenshot (1868)](https://user-images.githubusercontent.com/88953654/137594812-bf5d42f2-02f8-4398-bfff-59acac5b4bdd.png)
+
 Part-2 Enabling Google Home Voice to control GPIO pins using Bluetooth Headset
 
 ### Connecting Bluetooth Headset to Raspberry pi(Tested and Verified)
