@@ -1,0 +1,52 @@
+3.5mm Audio jack Recorder and Speaker:
+======================================================================================
+pcm.!default {
+  type asym
+  capture.pcm "mic"
+  playback.pcm "speaker"
+}
+pcm.mic {
+  type plug
+  slave {
+    pcm "hw:<card number>,<device number>"   #can be known by <arecord -l>
+  }
+}
+pcm.speaker {
+  type plug
+  slave {
+    pcm "hw:<card number>,<device number>"    #can be known by <aplay -l>
+  }
+}
+
+For bluetooth headset I used two formats both working:
+
+1)================================================================================================================
+defaults.bluealsa.interface "hci0"
+defaults.bluealsa.device "EB:06:EF:6A:D4:17"
+defaults.bluealsa.profile "sco"
+defaults.bluealsa.delay 10000
+2)===========================================================OR======================================================
+pcm.!default {
+type asym
+capture.pcm "mic"
+playback.pcm "speaker"
+}
+pcm.mic {
+  type plug 
+slave.pcm {
+type bluealsa device "EB:06:EF:6A:D4:17"
+profile "a2dp"
+}
+}
+pcm.speaker {
+type plug
+slave.pcm {
+type bluealsa device "EB:06:EF:6A:D4:17"
+profile "a2dp"
+}
+}
+
+ctl.!default {
+type bluealsa
+}
+=======================================================================================================================
