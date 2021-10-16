@@ -2,7 +2,7 @@
 
 ## Part-A via Configuring PHP to Apache2
 
-Part-1 Creating webpage interface to control GPIO pins via Apache2
+Part-1 Creating PHP webpage interface to control GPIO pins using Python via Apache2 webserver
 
 php and python files in Repository
 
