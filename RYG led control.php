@@ -2,7 +2,7 @@
 <html>
 	
 <?php
-#$output = shell_exec("sudo python /var/www/html/myRaspv1.0.py ".strtolower($_GET['red action', 'yellow action','green action'])) ;
+#$output = shell_exec("sudo python /var/www/html/RYG led control.py ".strtolower($_GET['red action', 'yellow action','green action'])) ;
 if (!empty($_GET["action"])) {
   $output = shell_exec("sudo python3 /var/www/html/test.py Red_led ".strtolower($_GET["action"])) ;
 }
